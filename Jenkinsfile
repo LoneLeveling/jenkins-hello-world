@@ -21,7 +21,7 @@ tools{
             }
         }
         
-        stage('build'){
+        stage('Build'){
             steps{
               // git branch: 'main', changelog: false, poll: false, url: 'https://github.com/LoneLeveling/jenkins-hello-world.git'
                 sh "mvn clean package -DskipTests=true"
